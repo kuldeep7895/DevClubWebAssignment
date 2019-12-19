@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Myblog</title>
+</head>
+
+<body>
+	<link rel="stylesheet" href="Dev.css">
+	<ul>
+		<li>
+             <a href="#About me">About me</a>
+		</li>
+		<li>
+             <a href="#Hobby">My hobbies</a>
+		</li>
+        <li>
+             <a href="#Expectations vs Reality">Expectations vs Reality</a>
+        </li>
+        <li>
+            <a href="#comments">Feedback</a>
+        </li>
+	</ul>
+	<img src="kuldeep.jpg" alt="" class="myimg">
+	<center>
+		<p id="name">Kuldeep Meena</p>
+	</center>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="intro">
+		<a name="About me"></a>
+		<center>
+			<h1>Me</h1>
+			<p style="font-size: xx-large;color: whitesmoke;">Think,Execute,Repeat</p>
+		</center>
+		<img src="think.jpg" alt="" width="30%" style="float: right;">
+		<div class="mybio">
+			<p>
+				<h2>About me: </h2>
+				Hi everyone.I am <b>Kuldeep</b> 
+				<br>I am a student at <b>IIT Delhi</b> 
+				<br>I am pursuing B.Tech in E.E.
+				<br>I love to code and would like to be
+				<br>a part of Dev Club.</p>
+		</div>
+	</div>
+	<div class="hobbies">
+		<a name="Hobby"></a>
+		<center>
+			<h1><b>My Hobbies</b></h1>
+			<p style="font-size: larger;">Best people have plenty of hobbies</p>
+		</center>
+		<br>
+		<img src="code.jpg" alt="" id="code">
+		<div id="hobby">
+			<ol>
+				<li>I love to code.</li>
+				<br>
+				<li>I love listening music in free time</li>
+				<br>
+				<li>I play cricket.</li>
+				<br>
+				<li>I look to spend time with friends.</li>
+				<br>
+			</ol>
+		</div>
+	</div>
+	</div>
+	<div class="nbio">
+		<a name="Expectations vs Reality"></a>
+		<center>
+			<h1>Ecpectations vs Reality</h1>
+		</center>
+		<center>
+			<p style="font-size: xx-large;">In IIT</p>
+		</center>
+		<div class="evsr">
+			<p> <b>Expectations:</b>
+				<ol>
+					<li>Great teachers.</li>
+					<li>Eberyone would be book worm.</li>
+					<li>I will get offers as soon as i enter IIT.</li>
+					<li>I will just study</li>
+				</ol>
+			</p>
+			<img src="exp.jpg" width="40%" alt="">
+			<p> <b>Reality</b>
+				<ol>
+					<li>Some teachers don't seem to care.</li>
+					<li>Yes but only if tomorrow is an exam.</li>
+					<li>It takes much hardwork to get a job.</li>
+					<li>I hardly study.</li>
+				</ol>
+			</p>
+		</div>
+    </div>
+    
+        <div class="suggestion">
+            <a name="suggestion"></a>
+
+                <center>
+
+                    <h1>
+                        Feedback
+                    </h1>
+                    <p>
+                        Spare some time to leave a comment
+                    </p>
+                    <img src="feedback.jpg" width="20%" alt="" style="margin-top: 5px;">
+                    
+                    <form>
+                        <textarea id="words"></textarea><br>
+                        <input type="button" onclick="getwords()" value="Submit" /> <br>
+                        <p id="para"></p>
+                        </form>
+                        
+                        <script type="text/javascript">
+                        function getwords() {
+                          text = words.value;
+                          document.getElementById("para").innerHTML += '<p>'+text
+                          document.getElementById("words").value = ""
+                        }
+                        </script>
+                </center>  
+        </div>
+</body>
+
+</html>
